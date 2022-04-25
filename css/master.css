@@ -109,14 +109,13 @@
   margin: 0 auto 80px;
   text-align: center;
 }
-/* stylelint-disable no-descending-specificity */
+
 #recent-work .section-header h1 {
   font-size: 40px;
   font-family: var(--font-family-Crete-Round);
   font-weight: 400;
   margin-bottom: 50px;
 }
-/* stylelint-enable no-descending-specificity */
 
 #recent-work .section-header hr {
   border-color: #212121;
