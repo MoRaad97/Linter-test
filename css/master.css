@@ -1,0 +1,247 @@
+:root {
+  --main-text-color: white;
+  --primary-template-color: #ff6b00;
+  --secondary-template-color: #1c1a19;
+  --font-family-Crete-Round: "Crete Round", serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 13%);
+  }
+}
+
+#header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #3c3a39;
+}
+
+#header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .name {
+  color: var(--main-text-color);
+  font-size: 17px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+}
+
+#header .links .icon {
+  width: 26px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#header .links .icon span {
+  margin-bottom: 2px;
+  width: calc(100% - 10px);
+  height: 2px;
+  background-color: var(--main-text-color);
+  border-radius: 5px;
+}
+
+#headline {
+  background-color: var(--secondary-template-color);
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#headline .image {
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+
+#headline .headline-container .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+#headline .headline-container .text h1 {
+  margin: 0;
+  font-size: 56px;
+  font-family: var(--font-family-Crete-Round);
+  font-weight: 400;
+  color: var(--primary-template-color);
+}
+
+#headline .headline-container .text h3 {
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+  color: var(--main-text-color);
+  margin: 0;
+}
+
+#headline .headline-container .text p {
+  color: white;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  line-height: 24px;
+}
+
+#headline .headline-container .social-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+#recent-work {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#recent-work .section-header {
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+/* stylelint-disable no-descending-specificity */
+#recent-work .section-header h1 {
+  font-size: 40px;
+  font-family: var(--font-family-Crete-Round);
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+/* stylelint-enable no-descending-specificity */
+
+#recent-work .section-header hr {
+  border-color: #212121;
+  border-width: 1px 0 0;
+}
+
+#recent-work .projects {
+  display: flex;
+  flex-direction: column;
+}
+
+#recent-work .projects .main-project img {
+  width: 100%;
+}
+
+#recent-work .projects .main-project h3 {
+  font-size: 32px;
+  font-family: var(--font-family-Crete-Round);
+  font-weight: 400;
+  margin: 15px 0;
+  color: #091e42;
+}
+
+#recent-work .projects .main-project p {
+  font-family: Inter, sans-serif;
+  line-height: 24px;
+  color: #091e42;
+}
+
+#recent-work .projects .main-project ul {
+  list-style: none;
+  padding: 0;
+}
+
+#recent-work .projects .main-project ul li {
+  width: fit-content;
+  display: inline-block;
+  margin-right: 10px;
+  border: solid 1px #8993a4;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+#recent-work .projects .main-project ul li a {
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  color: #091e42;
+  font-size: 15px;
+}
+
+#recent-work .projects .main-project button {
+  padding: 12px;
+  background-color: var(--primary-template-color);
+  border: none;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
+#recent-work .projects .secondary-projects {
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+#recent-work .projects .secondary-projects .project {
+  background-image: url(../imgs/profesionalartprintingdata.png);
+  overflow: hidden;
+  padding: 16px 16px 0;
+}
+
+#recent-work .projects .secondary-projects .project h2 {
+  font-size: 32px;
+  font-family: var(--font-family-Crete-Round);
+  font-weight: 400;
+  margin: 72px 0 0;
+  color: white;
+}
+
+#recent-work .projects .secondary-projects .project p {
+  font-family: Inter, sans-serif;
+  line-height: 24px;
+  color: white;
+  margin: 12px 0 0;
+  font-weight: 300;
+}
+
+#recent-work .projects .secondary-projects .project ul {
+  list-style: none;
+  padding: 0;
+}
+
+#recent-work .projects .secondary-projects .project ul li {
+  width: fit-content;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #ffffff3d;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+#recent-work .projects .secondary-projects .project ul li a {
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 15px;
+}
+
+#recent-work .projects .secondary-projects .project button {
+  padding: 12px 0;
+  background-color: var(--primary-template-color);
+  border: none;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  width: calc(100% + 20%);
+  position: relative;
+  bottom: 0;
+  left: -10%;
+}
